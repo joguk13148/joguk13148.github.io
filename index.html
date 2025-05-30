@@ -1,10 +1,169 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>테스트 페이지</title>
-</head>
-<body>
-  <h1>안녕하세요! GitHub Pages 테스트입니다.</h1>
-</body>
+<html>
+    <lang="ko">
+    <meta charset="UTF-8">    
+    <head>
+        <title> 202413148 조국 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                #name {
+                    font-size: 40px;
+                }
+                .position {
+                    font-size: 40px;
+                }
+            }
+
+            .container {
+                display: flex;
+                align-items: flex-start;
+            }
+           #namebox {
+                display: flex;
+                flex-direction: column;
+           }
+            img {
+                width: 350px;
+                height: 500px;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+            #name {
+                font-size: 62px;
+                color: black;
+                margin: 0;
+                line-height: 1;
+                font-weight: bold;
+            }
+            .position {
+                font-size: 62px;
+                font-weight: bold;
+                color: gray;
+                margin: 0;
+                line-height: 1;
+            }
+            #line {
+                display: flex;
+                align-items: center;
+            }
+            .introduce {
+                margin-left: 10px;
+                font-size: 18px;
+            }
+            .introduce3 {
+                margin-left: 6px;
+                font-size: 18px;
+            }
+            nav ul {
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                gap: 90px;
+                font-size: 30px;
+                color: black;
+            }
+            nav ul li {
+                display: inline-block;
+            }
+            nav ul li a {
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+            }
+            section {
+                display: none;
+                opacity: 0;
+                transform: translateX(-100%);
+                transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            }
+
+            section.active {
+                display: block;
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="./KakaoTalk_20250526_115905214.jpg" alt="조국의 사진">
+            <div id="namebox">
+                <p id="name">JOGUK</p>
+                <div id="line"><p class="position">S<p class="introduce"> - 조국 </p></p></div>
+                <div id="line"><p class="position">T<p class="introduce"> - 2004년 7월 22일 </p></p></div>
+                <div id="line"><p class="position">U<p class="introduce3"> - 경상남도 통영시 출생</p></p></div>
+                <div id="line"><p class="position">D<p class="introduce">- 강원대학교 경영대학 경제정보통계학부 정보통계학전공 2학년 </p></p></div>
+                <div id="line"><p class="position">E<p class="introduce">- 취미 : 독서, 영화보기 </p></p></div>
+                <div id="line"><p class="position">N<p class="introduce">- 성격 및 가치관 : 차분하고 꼼꼼함 </p></p></div>
+                <div id="line"><p class="position">T<p class="introduce">- 목표 및 꿈 : 목표를 향해 계속 달려가기 </p></p></div>
+            </div>
+        </div>
+        <footer>
+        <nav>
+        <ul>
+            <li><a href="#activities">활동</a></li>
+            <li><a href="#growth">성장 연혁</a></li>
+            <li><a href="#favorite">좋아하는 작품</a></li>
+        </ul>
+        </nav>
+        </footer>
+        <section id="activities">
+            <h2>활동</h2>
+            <p> 2024년 강원대학교 경제정보통계학부 입학</p>
+            <p> 2024년 강원대학교 제50대 정보통계학전공 '라포'학생회 총무차장</p>
+            <p> 2025년 강원대학교 경제정보통계학부 정보통계학전공 배정</p>
+            <p> 2024-2 ~ 2025-1 강원대학교 탐AO 정보통계학전공 멘토 </p>
+
+        </section>
+        <section id="growth">
+            <h2>성장 연혁</h2>
+            <p>2004/07/22 경상남도 통영시 출생</p>
+            <p>2011/03 경상남도 통영시 통영초등학교 입학</p>
+            <p>2017/02 경상남도 통영시 통영초등학교 졸업</p>
+            <p>2017/03 경상남도 통영시 중앙중학교 입학</p>
+            <p>2020/02 경상남도 통영시 중앙중학교 졸업</p>
+            <p>2020/03 경상남도 통영시 동원고등학교 입학</p>
+            <p>2021/04 경상남도 통영시 동원고등학교 중퇴</p>
+            <p> 2024년 강원대학교 경제정보통계학부 입학</p>
+            <p> 2024년 강원대학교 제50대 정보통계학전공 '라포'학생회 총무차장</p>
+            <p> 2025년 강원대학교 경제정보통계학부 정보통계학전공 배정</p>
+            <p> 2024-2 ~ 2025-1 강원대학교 탐AO 정보통계학전공 멘토 </p>    
+        </section>   
+        <section id="favorite">
+            <h3>좋아하는 작품</h3>
+            <p><a href="https://namu.wiki/w/%EC%9D%B4%EB%AF%B8%ED%85%8C%EC%9D%B4%EC%85%98%20%EA%B2%8C%EC%9E%84(%EC%98%81%ED%99%94)" target="_blank">이미테이션 게임 (2015)</a></p>
+            <p><a href="https://namu.wiki/w/%ED%9E%88%EB%93%A0%20%ED%94%BC%EA%B2%A8%EC%8A%A4?from=%ED%9E%88%EB%93%A0%ED%94%BC%EA%B2%A8%EC%8A%A4" target="_blank">히든 피겨스 (2017)</a></p>
+            <p><a href="https://product.kyobobook.co.kr/detail/S000200550189" target="_blank">급류_정태건 (2022)</a></p>
+            <p><a href="https://product.kyobobook.co.kr/detail/S000213567877" target="_blank">동경_김화진 (2024)</a></p>  
+        </section> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            $("nav ul li a").click(function (event) {
+            event.preventDefault(); 
+
+            const index = $(this).parent().index(); 
+            const sections = $("section");
+
+            sections.each(function () {
+                $(this).removeClass("active");
+            });
+
+            setTimeout(function () {
+                sections.eq(index).addClass("active");
+            }, index * 300); 
+        });
+    });
+        </script>
+    </body>
 </html>
